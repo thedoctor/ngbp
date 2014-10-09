@@ -264,9 +264,9 @@ module.exports = function ( grunt ) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'styles',
+          cwd: 'src/sass/',
           src: ['*.scss'],
-          dest: '../public',
+          dest: '<%= build_dir %>/assets/',
           ext: '.css'
         }]
       }
